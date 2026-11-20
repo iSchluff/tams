@@ -1,6 +1,6 @@
 {
     "title": "Query String UUID list",
-    "description": "A list of Universally Unique Identifiers (UUIDs) as defined in [RFC9562](https://www.rfc-editor.org/rfc/rfc9562), formatted for use in query string parameters. When using UUIDv8 implementations MUST ensure that separate resources are assigned unique identifiers.",
+    "description": "A list of Universally Unique Identifiers (UUIDs) as defined in [RFC9562](https://www.rfc-editor.org/rfc/rfc9562), formatted for use in query string parameters. When using UUIDv8 implementations MUST ensure that separate resources are assigned unique identifiers. Note that NMOS IS-04 currently only accepts UUID versions 1-5 (see [AMWA-TV/is-04#205](https://github.com/AMWA-TV/is-04/issues/205)), so implementations SHOULD prefer UUID versions 1-5, where interoperability with NMOS IS-04 is required.",
     "type": "string",
     "pattern": "^([0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})(,[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})*$"
 }
